@@ -1,8 +1,8 @@
-<h1>Overview<span style="color:red;font-size:15px;margin-left:10px;vertical-align:middle;border:1px solid">
-                <b> Coming Soon </b>
-            </span>
-</h1>
-<p>
+<TitleBlock slots="heading, disclaimerText" theme="lightest" className="titleBlock-align-left"/>
+
+## Overview
+
+Available under Early Access Program
 
 **What is PDF Tag structure?**
 
@@ -44,5 +44,3 @@ etc), along with language identification for each paragraph for content and to i
 tagged PDF, however it is not guaranteed to comply with accessibility standards such as 
 [WCAG](https://www.w3.org/WAI/standards-guidelines/wcag/) and [PDF/UA](https://www.pdfa.org/resource/iso-14289-pdfua/), 
 as you may need to perform further downstream remediation to meet those standards.
-
-</p>
