@@ -351,7 +351,7 @@ module.exports = {
       },
       {
         title: 'PDF Accessibility Auto-Tag API',
-        subTitle: 'Available under Early Access Program',
+        subTitle: 'Early Access Program',
         path: 'overview/pdf-accessibility-auto-tag-api/index.md',
         pages: [
           {
