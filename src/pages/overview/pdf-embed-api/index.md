@@ -82,10 +82,6 @@ The PDF Embed API provides ready-to-run sample files for every feature.
 
 If a PDF renders in the web viewer, the sample has correctly executed.
 
-<InlineAlert slots="text"/>
-
-You do not need a client ID to run the samples locally.
-
 ## Live demo
 
 The [Adobe PDF Embed API
@@ -94,12 +90,12 @@ is to configure the viewer and also provides a "generate code" button so
 that you can immediately see your UI changes reflected in a live code
 sample.
 
-![image](../images/playground.png)
+![View SDK Playground with customization tools such as annotation, download etc and generate code button on the left](../images/playground.png)
 
 ## Supported browsers
 
-PDF Embed API is supported on the latest versions of all modern
-browsers.
+PDF Embed API is supported on the latest versions of the following 
+browsers:
 
 -   Windows - Microsoft Edge, Google Chrome, Mozilla Firefox.
 -   macOS - Safari, Google Chrome, Microsoft Edge, Mozilla Firefox.
@@ -114,7 +110,7 @@ PDF Embed API will end support for Internet Explorer 11 and Microsoft Edge Legac
 
 PDF printing is currently not supported in Firefox browser. Clicking on the print PDF button will show a popup asking users to download the file and print using Adobe Acrobat Reader.
 
-![image](../images/print_unsupported_FF.png)
+![Print Unsupported Error in Firefox](../images/print_unsupported_FF.png)
 
 ## Mobile support
 
@@ -151,11 +147,11 @@ and select the desired view mode from the dropdown.
 
 **Continuous view mode**
 
-![image](../images/continuous_mode.png)
+![Continous Mode](../images/continuous_mode.png)
 
 **Single page view mode**
 
-![image](../images/single_page_mode.png)
+![Single Page Mode](../images/single_page_mode.png)
 
 These view modes can also be set using the configuration variable
 `defaultViewMode`. Set the appropriate value of the variable and pass it
@@ -176,7 +172,7 @@ particular page.
 Note that this functionality is available only with Full Window embed
 mode.
 
-![image](../images/goto_page.png)
+![Go To Page Dialog](../images/goto_page.png)
 
 ### Zoom in
 

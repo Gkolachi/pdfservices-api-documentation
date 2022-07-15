@@ -18,7 +18,7 @@ controls for:
 -   Modifying the PDF display to Fit Page or Fit Width (applicable in
     Full Window and Lightbox embed modes).
 
-![image](../images/ui.png)
+![Options for Customising User Interface using undo-redo, annotation tools, navigation, zoom etc](../images/ui.png)
 
 </p>
 
@@ -153,12 +153,12 @@ details such as first name, last name, and email address. By default, if
 you do not register a user profile callback, the user name is displayed
 as "Guest" in the comments pane.
 
-![image](../images/userprofile_new.png)
+![User being referred to as guest](../images/userprofile_new.png)
 
 When the callback is registered, user annotations are associated with
 the corresponding username.
 
-![image](../images/userprofile1.png)
+![User being referred with correct username](../images/userprofile1.png)
 
 **User profile callback signature**
 
@@ -379,7 +379,7 @@ and data in the following format:
     data is optional in this case. The user will see an error popup and
     should retry saving.
 
-![image](../images/fail.png)
+![Generic Error Message](../images/fail.png)
 <br/>
 
 -   FILE\_MODIFIED: Use the response code FILE\_MODIFIED to capture the case when two users
@@ -399,7 +399,7 @@ In this scenario, the current user sees a popup with two options:
 -   **Discard my changes**: Discards the current user’s changes and
     reloads the PDF.
 
-![image](../images/file_modified.png)
+![File Modified message](../images/file_modified.png)
 
 **Save callback**
 
@@ -525,7 +525,7 @@ modifying the same file. Note the following:
     file. The user sees a popup with the "Get Latest Version" option
     which will reload the latest version of the file.
 
-![image](../images/getlatest.png)
+![Get Latest Versio message](../images/getlatest.png)
 <br/>
 
 -   If the Promise returns FILE\_MODIFIED after the current user has
@@ -535,7 +535,7 @@ modifying the same file. Note the following:
     current user’s changes while **Discard my changes** discards the
     current user’s changes and reloads the PDF.
 
-![image](../images/saveconflict.png)
+![Conflict On Save message](../images/saveconflict.png)
 
 **Status callback**
 
@@ -584,7 +584,7 @@ is automatically enabled so that they can save their information to the
 PDF. The PDF Embed API renders forms so that they appear similar to
 forms viewed in the full Acrobat app:
 
-![image](../images/form1.png)
+![Editing text in a form](../images/form1.png)
 
 <InlineAlert slots="text" />
 
@@ -610,7 +610,7 @@ default, you can disable the feature by setting it to *false*.
 
 Disabling form editing un-highlights form fields:
 
-![image](../images/form2.png)
+![Disabling form editing](../images/form2.png)
 
 ### Unsupported form fields
 
@@ -630,7 +630,7 @@ In the current version, following form fields are unsupported:
 When the API detects unsuppported form fields, a dialog appears on the
 rendered PDF:
 
-![image](../images/formnosupport.png)
+![No Support for Form Fields message](../images/formnosupport.png)
 
 ## Viewer API
 
@@ -1213,9 +1213,7 @@ Find the working code sample
 
 <hr />
 
-### Other APIs
-
-#### getPDFMetadata
+### getPDFMetadata
 
 This API returns basic information about the PDF fetched from the PDF
 dictionary; for example, the PDF's number of pages and title.
@@ -1245,7 +1243,7 @@ previewFilePromise.then(adobeViewer => {
 
 <hr />
 
-#### getXMPMetadata
+### getXMPMetadata
 
 XMP (Extensible Metadata Platform) is a technology developed by Adobe
 which provides a common XML framework to store metadata in digital
@@ -1291,7 +1289,7 @@ previewFilePromise.then(adobeViewer => {
 
 <hr />
 
-#### getSelectedContent
+### getSelectedContent
 
 If a user selects any content in the viewer, then the selected content
 can be fetched using this API. This API currently only works with text
@@ -1323,7 +1321,7 @@ previewFilePromise.then(adobeViewer => {
 
 <hr />
 
-#### setCursor
+### setCursor
 
 This API sets the page cursor to any cursor style, such as help, wait,
 crosshair, etc.
@@ -1352,7 +1350,7 @@ previewFilePromise.then(adobeViewer => {
 
 <hr />
 
-#### resetCursor
+### resetCursor
 
 This API revokes an applied cursor style and reverts it to the default
 cursor style.
@@ -1378,7 +1376,7 @@ previewFilePromise.then(adobeViewer => {
 
 <hr />
 
-#### getCurrentPage
+### getCurrentPage
 
 This API returns the current page number of the in focus page.
 
@@ -1407,7 +1405,7 @@ previewFilePromise.then(adobeViewer => {
 
 <hr />
 
-#### getPageZoom
+### getPageZoom
 
 This API takes the PDF page number as input and returns the zoom level
 of that page.
@@ -1438,7 +1436,7 @@ previewFilePromise.then(adobeViewer => {
 
 <hr />
 
-#### gotoLocation
+### gotoLocation
 
 This API enables navigation to any PDF page. It accepts a page number as
 input. You can also pass the x and y coordinates on the page as optional
@@ -1479,7 +1477,7 @@ previewFilePromise.then(adobeViewer => {
 
 <hr />
 
-#### clearPageSelection
+### clearPageSelection
 
 This API accepts a page number as input and clears any text selection
 applied to the page.
@@ -1510,7 +1508,7 @@ adobeViewer.getAPIs().then(apis => {
 
 <hr />
 
-#### enableTextSelection
+### enableTextSelection
 
 This API controls text selection in PDF. The default is enabled
 (*true*). Note that disabling text selection also disables the highlight

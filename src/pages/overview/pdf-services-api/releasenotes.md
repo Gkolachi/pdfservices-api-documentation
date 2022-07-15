@@ -19,7 +19,7 @@ repo as follows:
 2.  Select *Releases*.
 3.  Select and download the needed release.
 
-![image](../images/prevrelease.png)
+![Previous Release tags with release notes and links to the assets](../images/prevrelease.png)
 
 ## Migration Guide to PDF Services SDK
 
@@ -135,11 +135,56 @@ Upgrading to the latest SDK should not break existing applications.
 
 ## Change history
 
+### Extract PDF Server Side Release (21 June, 2022; server side release)
+| Change  | Language            | Description                                                                                   |
+| ------- | ------------------- | --------------------------------------------------------------------------------------------- |
+| Changed | All                 | Enhanced error messages by adding more sub error codes							            |
+| Changed | All                 | Bug fixes and stability improvements.								|
+
+### Extract PDF Server Side Release (16 May, 2022; server side release)
+| Change  | Language            | Description                                                                                   |
+| ------- | ------------------- | --------------------------------------------------------------------------------------------- |
+| Changed | All                 | Bug fixes and stability improvements.								|
+
+### 2.2.2 (May, 2022; patch release)
+| Change  | Language            | Description                                                                                   |
+| ------- | ------------------- | --------------------------------------------------------------------------------------------- |
+| Changed | Java, NodeJS               | Dependent library upgrades to address vulnerabilities reported in NPM and Maven.                                               |
+
+### Create PDF Server Side Release (6 April, 2022; server side release)
+| Change  | Language            | Description                                                                                   |
+| ------- | ------------------- | --------------------------------------------------------------------------------------------- |
+| Changed | All                 | Enhanced support for leveraging embedded TrueType fonts.                                               |
+
+### Extract PDF Server Side Release (05 April, 2022; server side release)
+| Change  | Language            | Description                                                                                   |
+| ------- | ------------------- | --------------------------------------------------------------------------------------------- |
+| Changed | All                 | Improved handling of bad PDFs with 50% reduction in frequency of bad PDF errors and improved successful conversion rate.                                                        |
+| Changed | All                 | Bug fixes and stability improvements.                                                         |
+
+### 2.2.1 (March, 2022; patch release)
+| Change  | Language            | Description                                                                                   |
+| ------- | ------------------- | --------------------------------------------------------------------------------------------- |
+| Changed | .NET                | Dependent library upgrades and SDK internal additional validation checks.  |
+
+### Extract PDF Server Side Release (22 February, 2022; server side release)
+| Change  | Language            | Description                                                                                   |
+| ------- | ------------------- | --------------------------------------------------------------------------------------------- |
+| Changed | All                 | Adding support for identification of scanned pages with "is_scanned" field in Extract output. |
+| Changed | All                 | Bug fixes and stability improvements.                                                         |
+
+### 2.2.1 (February, 2022; patch release)
+
+| Change  | Language            | Description                                                                                                                                                   |
+| ------- | ------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Changed | Java                | Dependent library upgrades.  |
+
+
 ### 2.2.1 (January, 2022; patch release)
 
 | Change  | Language            | Description                                                                                                                                                   |
 | ------- | ------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Changed | Node JS                 | Enhanced Document Generation interface to support Json Object and Json array as Fragments data.   |
+| Changed | Node JS             | Enhanced Document Generation interface to support Json Object and Json array as Fragments data.   |
 
 ### 2.2.0 (January, 2022; minor release)
 

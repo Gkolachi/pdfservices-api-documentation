@@ -18,7 +18,7 @@ This section details out step by step instructions to get started with Document 
 
 Authoring a document template involves adding the template tags to your Word document as illustrated below:
 
-![image](../images/design_document_templates.gif)
+![Document template with heading and template tags](../images/design_document_templates.gif)
 
 <br/>
 
@@ -86,10 +86,10 @@ The sample below generates the output document in the **PDF** format. Similarly,
  
    package com.adobe.pdfservices.operation.samples.documentmerge;
  
-   public class MergeDocumentToDOCX {
+   public class MergeDocumentToPDF {
  
       // Initialize the logger.
-      private static final Logger LOGGER = LoggerFactory.getLogger(MergeDocumentToDOCX.class);
+      private static final Logger LOGGER = LoggerFactory.getLogger(MergeDocumentToPDF.class);
  
       public static void main(String[] args) {
  
@@ -138,7 +138,7 @@ The sample below generates the output document in the **PDF** format. Similarly,
 // cd MergeDocumentToDocx/
 // dotnet run MergeDocumentToDOCX.csproj
 
-  namespace MergeDocumentToDOCX
+  namespace MergeDocumentToPDF
    {
        class Program
        {
@@ -174,7 +174,7 @@ The sample below generates the output document in the **PDF** format. Similarly,
                    FileRef result = documentMergeOperation.Execute(executionContext);
   
                    // Save the result to the specified location.
-                   result.SaveAs(Directory.GetCurrentDirectory() + "/output/DocumentMergeOutput.pdf");
+                   result.SaveAs(Directory.GetCurrentDirectory() + "/output/documentMergeOutput.pdf");
                }
                catch (ServiceUsageException ex)
                {
@@ -315,7 +315,7 @@ curl --location --request POST 'https://cpf-ue1.adobe.io/ops/:create?respondWith
 As a result of the Document Generation API, template tags are replaced
 with the input JSON data.
 
-![image](../images/generate_document.gif)
+![Document template with template tags being replaced by actual values](../images/generate_document.gif)
 
 
 #### Generate PDF or Word document (with [Fragments](./fragments.md))
@@ -509,7 +509,6 @@ The sample below shows the use of **Fragments** in the word template and generat
 // node src/documentmerge/merge-document-to-pdf-fragments.js
 
     const PDFServicesSdk = require('@dcloud/pdfservices-node-sdk');
-    const Fragments = PDFServicesSdk.Fragments;
     
     try {
         // Initial setup, create credentials instance.

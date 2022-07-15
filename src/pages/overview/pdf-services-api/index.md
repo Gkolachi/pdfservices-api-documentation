@@ -106,7 +106,7 @@ For security reasons you may wish to confirm the installer's authenticity. To do
 4.  Verify the hash you generated matches the value in the .sha1 file.
 
 ```
-25f4c2e3a119d51cf2f3e3df0db42052d77e0bea
+8d6045f83fb934415e603d693623c27318f90f9e
 ```
 
 #### Logging
@@ -152,7 +152,7 @@ logger.apache.level=WARN
 
 The sample files reference input and output files located in the sample project's /resources/ directory. You can of course modify the files and paths or use your own files.
 
-![image](../images/samplefilesjava.png)
+![Samples directory structure Java](../images/samplefilesjava.png)
 
 #### Custom projects
 
@@ -165,7 +165,7 @@ To build a custom project:
 3.  Open the pdfservices-api-credentials.json downloaded when you created your credential.
 4.  Add the [Authentication](./index.md#authentication) details as described above.
 
-![image](../images/maven.png)
+![Adobe PDF Services SDK On Maven](../images/maven.png)
 
 ### .NET
 
@@ -284,7 +284,7 @@ While building the sample project automatically downloads the Nuget package, you
 1.  Go to <https://www.adobe.com/go/pdftoolsapi_net_nuget>.
 2.  Download the latest package.
 
-![image](../images/nuget.png)
+![Adobe PDF Services SDK on Nuget](../images/nuget.png)
 
 ### Node.js
 
@@ -361,7 +361,7 @@ For security reasons you may wish to confirm the installer's authenticity. To do
 3.  Verify the hash in the downloaded file matches the value published here.
 
 ```
-  sha512-8vKY2fJHMNAHYL4j9JDSYozCbcy7U4nDseVU9cO3HeDYi6DJb+vAumWwTK00jOYtBYl9icNH9sBdJ39BTdfdOA==
+sha512-Rzq/8vEcir38gxTygOYQPx87hyli68JDU81PrBIAVWIJm9Yp7OUpy3vUH0SXEjBbtRIdEtOhELh/iAFbhYzq8Q==
 ```
 
 #### Logging
@@ -405,7 +405,7 @@ While building the sample project automatically downloads the Node package, you 
 1.  Go to <https://www.npmjs.com/package/@adobe/pdfservices-node-sdk>
 2.  Download the latest package.
 
-![image](../images/node.png)
+![Adobe PDF Services SDK on NPM JS](../images/node.png)
 
 ### Python
 
@@ -509,7 +509,7 @@ While building the sample project automatically downloads the Python package, yo
 1.  Go to <https://pypi.org/project/pdfservices-sdk/>
 2.  Download the latest package.
 
-![image](../images/python2.png)
+![Adobe PDF Services SDK on Pypi](../images/python2.png)
 
 ## Public API
 
